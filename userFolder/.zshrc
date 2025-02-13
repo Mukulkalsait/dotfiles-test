@@ -80,17 +80,29 @@ find ~/.local/state/nvim/swap/ -type f -name '*.swp' -mtime +7 -delete
 #G:===================alias ==================================
 alias lsl="eza -lag --icons --sort name"
 alias lsli="eza -laig --icons --sort name"
+
 alias tt="zellij"
 alias tth="zellij -l welcome"
 alias tta="zellij a"
+
 alias zshconfig="nvim ~/.zshrc"
-alias resource="source ~/.zshrc"
+alias bashconfig="nvim ~/.bashrc"
+alias wezconfig="nvim /mnt/c/Users/mdk12/.wezterm.lua"
 alias nvimconfig="nvim /home/mukuldk/.config/nvim/init.lua"
-alias pn="pnpm"
+
+alias resource="source ~/.zshrc"
+alias resourceb="source ~/.bashrc"
+
 alias cdc="cd /mnt/c/Users/mdk12"
 alias cdi="cd /mnt/i"
 alias cdr="cd /"
+
+alias pn="pnpm"
+
 alias snuu="sudo nala update && sudo nala upgrade"
+
+alias sysnmpp="sudo systemctl start nginx mysql php8.3-fpm "
+alias systnmpp="sudo systemctl stop nginx mysql php8.3-fpm "
 #===========================================================
 
 
