@@ -9,7 +9,7 @@ return (new PhpCsFixer\Config())
         'tab_width' => 2,            // How many spaces a tab represents
         'concat_space' => ['spacing' => 'one'],
         'line_length' => [
-            'line_length' => 200,  // Change this number to your preferred length
+            'line_length' => 220,  // Change this number to your preferred length
             'break_long_lines' => false,
             'inline_short_lines' => false,
         ],
