@@ -78,6 +78,9 @@ find ~/.local/state/nvim/swap/ -type f -name '*.swp' -mtime +7 -delete
 #===========================================================
 
 #G:===================alias ==================================
+alias resource="source ~/.zshrc"
+alias resourceb="source ~/.bashrc"
+
 alias lsl="eza -lag --icons --sort name"
 alias lsli="eza -laig --icons --sort name"
 
@@ -86,16 +89,15 @@ alias tth="zellij -l welcome"
 alias tta="zellij a"
 
 alias zshconfig="nvim ~/.zshrc"
-alias bashconfig="nvim ~/.bashrc"
 alias wezconfig="nvim /mnt/c/Users/mdk12/.wezterm.lua"
 alias nvimconfig="nvim /home/mukuldk/.config/nvim/init.lua"
-
-alias resource="source ~/.zshrc"
-alias resourceb="source ~/.bashrc"
+alias bashconfig="nvim ~/.bashrc"
+alias ttconfig="nvim /home/mukuldk/.config/zellij/config.kdl"
 
 alias cdc="cd /mnt/c/Users/mdk12"
 alias cdi="cd /mnt/i"
 alias cdr="cd /"
+alias cdD="cd /mnt/i/4.Downloads(zen)/"
 
 alias pn="pnpm"
 
@@ -103,6 +105,16 @@ alias snuu="sudo nala update && sudo nala upgrade"
 
 alias sysnmpp="sudo systemctl start nginx mysql php8.3-fpm "
 alias systnmpp="sudo systemctl stop nginx mysql php8.3-fpm "
+
+alias suM="su mdk"
+
+# alias chownAll="sudo chown -R {user}:{group} ./*"
+# alias chownAllM="sudo chown -R {user}:{group} ./*"
+alias dumpNvimConfig="cp -r /home/mukuldk/.config/nvim /mnt/i/5.WSL/mukuldk"
+alias dumpWezConfig="cp -r /mnt/c/Users/mdk12/.wezterm.lua /mnt/i/5.WSL/mukuldk"
+alias dumpDotFiles="cp -rv /mnt/c/Users/mdk12/.wezterm.lua /home/mukuldk/1Home/1.Configs_All/2.config_Online/dotfiles-test/userFolder/  && cp -rv /home/mukuldk/.zshrc /home/mukuldk/1Home/1.Configs_All/2.config_Online/dotfiles-test/userFolder/  && cp -rv /home/mukuldk/.config/zellij/config.kdl /home/mukuldk/1Home/1.Configs_All/2.config_Online/dotfiles-test/userFolder/ "
+
+alias findJava="readlink -f $(which java)"
 #===========================================================
 
 

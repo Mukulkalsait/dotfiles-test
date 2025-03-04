@@ -3,11 +3,9 @@ local wezterm = require("wezterm")
 return {
 
 	-- Y:  1:Main Profile
-
 	default_prog = { "I:\\A_Installation\\0.1_PWSH\\7-preview\\pwsh.exe" },
 
 	-- Y:  2:Keys Shortcuts
-
 	keys = {
 		--G: WSL and other
 		{
@@ -29,7 +27,7 @@ return {
 
 	-- Y:  3:Performance
 
-	font_size = 8.5,
+	font_size = 8.3,
 	max_fps = 165,
 	animation_fps = 165,
 	enable_tab_bar = false,
@@ -51,56 +49,21 @@ return {
 
 	-- FONTS INSTALLED
 	font = wezterm.font_with_fallback({
-		-- {
-		-- 	family = "JetBrains Mono",
-		-- 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-		-- },
-		-- Set up fallback fonts
-		-- {
-		-- 	family = "FiraMono Nerd Font",
-		-- 	weight = "Regular",
-		-- 	stretch = "Normal",
-		-- 	style = "Normal",
-		-- },
-		-- {
-		-- 	family = "EnvyCodeR Nerd Font Mono",
-		-- 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-		-- 	weight = "Regular",
-		-- 	stretch = "Normal",
-		-- 	style = "Normal",
-		-- },
-		{
-			family = "Agave Nerd Font Mono",
-			harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-			weight = "Regular",
-			stretch = "Normal",
-			style = "Normal",
-		},
-		-- {
-		-- 	family = "AnonymicePro Nerd Font",
-		-- 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-		-- 	weight = "Regular",
-		-- 	stretch = "Normal",
-		-- 	style = "Normal",
-		-- },
-		-- {
-		-- 	family = "CodeNewRoman Nerd Font Mono",
-		-- 	weight = "Regular",
-		-- 	stretch = "Normal",
-		-- 	style = "Normal",
-		-- },
-		-- {
-		-- 	family = "DaddyTimeMono Nerd Font Mono",
-		-- 	weight = "Regular",
-		-- 	stretch = "Normal",
-		-- 	style = "Normal",
-		-- },
-		-- {
-		-- 	family = "MesloLGS NF",
-		-- 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-		-- 	weight = "Regular",
-		-- 	stretch = "Normal",
-		-- 	style = "Normal",
-		-- },
+
+		-- { family = "MesloLGS NF", weight = "Regular", stretch = "Normal", style = "Normal" }, --good
+		-- { family = "EnvyCodeR Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, --good
+		-- { family = "DaddyTimeMono Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, -- too much space
+		-- { family = "FiraMono Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, -- too much space
+		-- { family = "CodeNewRoman Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, -- too italic
+		-- { family = "Cascadia Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, --good
+		-- { family = "AnonymicePro Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, -- too faint
+		-- { family = "ShureTechMono Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, -- great
+		-- { family = "AurulentSansM Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, --good at 7.4
+		-- { family = "Mononoki Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, -- nice
+		{ family = "Agave Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" }, -- very very good at 8.3
+		{ family = "Symbols Nerd Font Mono", weight = "Regular", stretch = "Normal", style = "Normal" },
+		{ family = "Segoe UI Emoji", weight = "Regular", stretch = "Normal", style = "Normal" },
+		{ family = "Webdings", weight = "Regular", stretch = "Normal", style = "Normal" },
+		-- { family = "Cascadia Mono", weight = "ExtraLight", stretch = "Normal", style = "Normal" },
 	}),
 }
