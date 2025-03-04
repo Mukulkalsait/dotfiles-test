@@ -110,8 +110,8 @@ alias suM="su mdk"
 
 # alias chownAll="sudo chown -R {user}:{group} ./*"
 # alias chownAllM="sudo chown -R {user}:{group} ./*"
-alias dumpNvimConfig="cp -r /home/mukuldk/.config/nvim /mnt/i/5.WSL/mukuldk"
-alias dumpWezConfig="cp -r /mnt/c/Users/mdk12/.wezterm.lua /mnt/i/5.WSL/mukuldk"
+alias dumpNvimConfig="cp -rv /home/mukuldk/.config/nvim /mnt/i/5.WSL/mukuldk"
+alias dumpWezConfig="cp -rv /mnt/c/Users/mdk12/.wezterm.lua /mnt/i/5.WSL/mukuldk"
 alias dumpDotFiles="cp -rv /mnt/c/Users/mdk12/.wezterm.lua /home/mukuldk/1Home/1.Configs_All/2.config_Online/dotfiles-test/userFolder/  && cp -rv /home/mukuldk/.zshrc /home/mukuldk/1Home/1.Configs_All/2.config_Online/dotfiles-test/userFolder/  && cp -rv /home/mukuldk/.config/zellij/config.kdl /home/mukuldk/1Home/1.Configs_All/2.config_Online/dotfiles-test/userFolder/ "
 
 alias findJava="readlink -f $(which java)"
