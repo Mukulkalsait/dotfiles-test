@@ -78,11 +78,12 @@ find ~/.local/state/nvim/swap/ -type f -name '*.swp' -mtime +7 -delete
 #===========================================================
 
 #G:===================alias ==================================
+alias rm="rm -i"
 alias resource="source ~/.zshrc"
 alias resourceb="source ~/.bashrc"
 
-alias lsl="eza -lag --icons --sort name"
-alias lsli="eza -laig --icons --sort name"
+alias lsl="eza -lagh --icons --group-directories-first --git --sort name"
+alias lsli="eza -laihgH --icons --group-directories-first --git --sort name"
 
 alias tt="zellij"
 alias tth="zellij -l welcome"
